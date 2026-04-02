@@ -1,7 +1,7 @@
 // Snake game - Form1.cs
 // Handles high level logic (mainly event handlers)
 //
-// Author: Celeste Ling
+// Author: iszbi
 // Date:   17/09/25
 
 // There's an obnoxious amount of comments here because I actually want to find shit

@@ -1,7 +1,7 @@
 ﻿// Snake game - SnakeRenderer.cs
 // Base class for gameplay graphics using WinForms GDI+
 //
-// Author: Celeste Ling
+// Author: iszbi
 // Date:   18/09/25
 
 using Snake.Logic;

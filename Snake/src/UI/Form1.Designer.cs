@@ -44,7 +44,7 @@
             ClientSize = new Size(800, 450);
             DoubleBuffered = true;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Snake";
             Load += Form1_Load;
             Paint += Form1_Paint;
             KeyDown += Form1_KeyDown;

@@ -3,7 +3,7 @@
 // Snake game - Form1.Logic.cs
 // Handles logic related to snake movement
 //
-// Author: celFree
+// Author: iszbi
 // Date:   17/09/25
 
 namespace Snake.Logic
@@ -64,7 +64,7 @@ namespace Snake.Logic
         internal bool CheckCollision()
         {
             SnakePoint tail = snakeBody.Last();
-
+            
             if (snakeBody.Skip(1).Any(pt => pt.Equals(snakeBody[0])))
             {
                 RequestRedraw?.Invoke(this, EventArgs.Empty);
@@ -72,7 +72,7 @@ namespace Snake.Logic
                 return true;
             }
 
-            if (snakeBody[0].X < 0 || snakeBody[0].X > GameSettings.Default.GridWidth || snakeBody[0].Y < 0 || snakeBody[0].Y > GameSettings.Default.GridHeight)
+            if (snakeBody[0].X < 0 || snakeBody[0].X >= GameSettings.Default.GridWidth || snakeBody[0].Y < 0 || snakeBody[0].Y >= GameSettings.Default.GridHeight)
             {
                 return true;
                 // GameOverProc("You crashed bozo\nsnake sez: owie");
@@ -107,7 +107,7 @@ namespace Snake.Logic
                 return true;
             }
 
-            if (snakeBodyTemp[0].X < 0 || snakeBodyTemp[0].X > GameSettings.Default.GridWidth || snakeBodyTemp[0].Y < 0 || snakeBodyTemp[0].Y > GameSettings.Default.GridHeight)
+            if ((snakeBodyTemp[0].X < 0 || snakeBodyTemp[0].X >= GameSettings.Default.GridWidth) || (snakeBodyTemp[0].Y < 0 || snakeBodyTemp[0].Y >= GameSettings.Default.GridHeight))
             {
                 return true;
             }

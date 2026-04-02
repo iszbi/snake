@@ -180,7 +180,7 @@
             numericUpDown3.Name = "numericUpDown3";
             numericUpDown3.Size = new Size(114, 27);
             numericUpDown3.TabIndex = 3;
-            numericUpDown3.Value = new decimal(new int[] { 250, 0, 0, 0 });
+            numericUpDown3.Value = new decimal(new int[] { 100, 0, 0, 0 });
             // 
             // button1
             // 

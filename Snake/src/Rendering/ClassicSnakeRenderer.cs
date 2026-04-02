@@ -1,7 +1,7 @@
 ﻿// Snake renderer - ClassicSnakeRenderer.cs
 // Handles classic mode gameplay graphics for C# graphics
 //
-// Author: Celeste Ling
+// Author: iszbi
 // Date:   22/10/25
 
 using System.Drawing.Drawing2D;
@@ -41,7 +41,7 @@ namespace Snake.Rendering
             return ret;
         }
 
-        public PointF SnakePointToPointF(SnakePoint input)
+        private PointF SnakePointToPointF(SnakePoint input)
         {
             return new PointF(input.X * GridSize, input.Y * GridSize);
         }

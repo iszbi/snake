@@ -1,7 +1,7 @@
 ﻿// Snake game - Form1.Input.cs
 // Handles all user input including the input buffer
 //
-// Author: Celeste Ling
+// Author: iszbi
 // Date:   17/09/25
 
 namespace Snake.Logic
